@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yuzhi.fine.passwordinputview.MainActivity">
+
+    <com.yuzhi.fine.passwordinputview.PasswordInputView
+        android:id="@+id/passwordInputView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="25dp"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="6"
+        app:pivBorderColor="#cccccc"
+        app:pivBorderRadius="10dp"
+        app:pivBorderWidth="10dp"
+        app:pivPasswordColor="#cccccc"
+        app:pivPasswordLength="6"
+        app:pivPasswordWidth="10dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInputView"
+        android:layout_marginTop="20dp"
+        android:text="button" />
+</RelativeLayout>
